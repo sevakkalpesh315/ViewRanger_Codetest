@@ -38,10 +38,11 @@ Also implement a simple Android UI that allows entering the string, and shows th
 
 # Test Results:  </br>
 
-15.74 smath.sevakkalpesh.com.viewrangercodetest.MainActivityRobotiumTest
-2.98s passed  testCase1
-2.88s passed  testCase2
-2.90s passed  testCase3
-6.98s errortestFail
+15.74 smath.sevakkalpesh.com.viewrangercodetest.MainActivityRobotiumTest  </br>
+2.98s passed  testCase1  </br>
+2.88s passed  testCase2  </br>
+2.90s passed  testCase3  </br>
+6.98s errortestFail  </br>
+
 # Application Video:  </br>
 ![Alt Text](http://i.giphy.com/xT4uQDGbSKPfSgsrAY.gif)
