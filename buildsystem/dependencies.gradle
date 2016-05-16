@@ -1,0 +1,48 @@
+allprojects {
+  repositories {
+    jcenter()
+  }
+}
+
+ext {
+  //Android
+      androidBuildToolsVersion = "23.0.2"
+      androidMinSdkVersion = 15
+      androidTargetSdkVersion = 23
+      androidCompileSdkVersion = 23
+
+    androidAnnotationsVersion = '23.2.1'
+    androidAppCompactVersion = '23.2.1'
+    androiddesignVersion = '23.2.1'
+    butterknifeVersion = '7.0.1'
+
+    //Testing
+
+    assertJVersion = '1.7.1'
+    espressoVersion = '2.2'
+    espressoContrib = '2.2'
+    testRunner = '0.4.1'
+    testRules= '0.4.1'
+    robotiumVersion = '5.2.1'
+
+
+
+    presentationDependencies = [
+          appcompat: "com.android.support:appcompat-v7:${androidAppCompactVersion}",
+          androiddesign: "com.android.support:design:${androiddesignVersion}",
+          butterknife: "com.jakewharton:butterknife:${butterknifeVersion}"
+  ]
+
+  presentationTestDependencies = [
+
+          testRunner:         "com.android.support.test:runner:${testRunner}",
+          testRules:          "com.android.support.test:rules:${testRules}",
+          espresso:           "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+          espressocontrib :   "com.android.support.test.espresso:espresso-contrib:${espressoVersion}",
+          robotium:           "com.jayway.android.robotium:robotium-solo:${robotiumVersion}"
+
+  ]
+
+
+
+}

@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+
+
+        applicationId globalConfiguration.getAt("androidApplicationId")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+        testApplicationId globalConfiguration.getAt("testApplicationId")
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    wearApp project(':wear')
+
+    def presentationDependencies = rootProject.ext.presentationDependencies
+    def presentationTestDependencies = rootProject.ext.presentationTestDependencies
+
+    compile presentationDependencies.appcompat
+    compile presentationDependencies.androiddesign
+    compile presentationDependencies.butterknife
+
+    // Android Testing Support Library's runner and rules
+    compile presentationTestDependencies.testRunner
+    compile presentationTestDependencies.testRules
+
+    // Espresso UI Testing dependencies.
+    compile presentationTestDependencies.espresso
+    compile presentationTestDependencies.espressocontrib
+    compile presentationTestDependencies.robotium
+
+}
+
+/*
+    Resolves dependency versions across test and production APKs, specifically, transitive
+    dependencies. This is required since Espresso internally has a dependency on support-annotations.
+*/
+configurations.all {
+
+    resolutionStrategy.force "com.android.support:support-annotations:22.2.0"
+}

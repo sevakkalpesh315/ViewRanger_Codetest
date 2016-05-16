@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Default background color for the status bar. -->
+    <color name="calculator_accent_color">#00BCD4</color>
+
+    <!-- Background color of the calculator display. -->
+    <color name="display_background_color">#FFF</color>
+
+    <!-- Text color for the formula in the calculator display. -->
+    <color name="display_formula_text_color">#8A000000</color>
+
+    <!-- Text color for the result in the calculator display. -->
+    <color name="display_result_text_color">#6C000000</color>
+
+    <!-- Background color for the numeric pad. -->
+    <color name="pad_numeric_background_color">#434343</color>
+
+    <!-- Background color for the operator pad. -->
+    <color name="pad_operator_background_color">#636363</color>
+
+    <!-- Background color for the advanced pad. -->
+    <color name="result_color">#1DE9B6</color>
+
+    <!-- Text color for a button in a pad. -->
+    <color name="text_color">#FFF</color>
+
+
+</resources>
