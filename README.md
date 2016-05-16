@@ -36,5 +36,12 @@ Also implement a simple Android UI that allows entering the string, and shows th
 6 Coordinator Layout </br>
 7 Mapping of Dependencies for gradle files
 
+# Test Results:  </br>
+
+15.74 smath.sevakkalpesh.com.viewrangercodetest.MainActivityRobotiumTest
+2.98s passed  testCase1
+2.88s passed  testCase2
+2.90s passed  testCase3
+6.98s errortestFail
 # Application Video:  </br>
 ![Alt Text](http://i.giphy.com/xT4uQDGbSKPfSgsrAY.gif)
