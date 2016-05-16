@@ -27,3 +27,13 @@ Also implement a simple Android UI that allows entering the string, and shows th
  * It is also known as postfix notation and does not need any parentheses as long as each operator has a fixed number of operands.
  *
 **/
+
+# Technologies Used:  </br>
+1 Android Studio
+2 MVP Design Pattern
+3 Expresso Unit testing
+4 Robotium BDD Testing
+5 Moneyrunner Stress testing
+6 Coordinator Layout
+7 Mapping of Dependencies for gradle files
+
