@@ -18,7 +18,7 @@ an input string of "4+5/2-1" should output 5.5
 Also implement a simple Android UI that allows entering the string, and shows the result on screen.
 
 
-Solution:  </br>
+# Solution:  </br>
 
 /**
  * Class to perform calculation
