@@ -36,3 +36,5 @@ Also implement a simple Android UI that allows entering the string, and shows th
 6 Coordinator Layout </br>
 7 Mapping of Dependencies for gradle files
 
+# Application Video:  </br>
+![Alt Text](http://i.giphy.com/xT4uQDGbSKPfSgsrAY.gif)
